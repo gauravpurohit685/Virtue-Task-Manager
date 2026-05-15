@@ -1,0 +1,24 @@
+{
+  "name": "virtye-tm",
+  "version": "1.0.0",
+  "description": "this is a virtue task manager created using html, css and javascript",
+  "homepage": "https://github.com/gauravpurohit685/Virtue-Task-Manager#readme",
+  "bugs": {
+    "url": "https://github.com/gauravpurohit685/Virtue-Task-Manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravpurohit685/Virtue-Task-Manager.git"
+  },
+  "license": "ISC",
+  "author": "Gaurav Purohit",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}
