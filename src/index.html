@@ -6,37 +6,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <div class="bg-pink-400 text-blue-100 h-16 text-4xl text-center pt-2 mb-3">
+    <div class="bg-pink-300 text-blue-100 h-16 text-4xl text-center pt-2 mb-3">
         Virtue TM
     </div>
     <div class="flex w-full ml-2">
         <div class="flex w-1/2 mr-2">
-            <input class="w-full border rounded-2xl text-center" placeholder="enter you task">
+            <input class="w-full border rounded-2xl text-center" placeholder="enter you task" id="listInput">
         </div>
         <div>
-            <button class="w-20 bg-pink-400 h-10 rounded-2xl"> ADD </button>
+            <button class="w-20 bg-pink-300 h-10 rounded-2xl cursor-pointer" id="addBtn"> ADD </button>
         </div>
     </div>
-    <div class="flex flex-wrap w-1/2">
-        <ul>
-
-        </ul>
+    <div class="flex flex-wrap  w-1/2 ml-2 mt-4" id="listId">
+        
     </div>
 
     <!-- This is a timer div that works as a timer for many purposes -->
 
     <div class="flex justify-between fixed top-16 right-0 w-30 h-15 bg-black p-2 text-white">
-        <div class="flex flex-col justify-center">
-            11
+        <div class="flex flex-col justify-center" id="minuteHand">
+            24
         </div>
         <div class="flex flex-col justify-center">
             :
         </div>
-        <div class="flex flex-col justify-center">
-            11
+        <div class="flex flex-col justify-center" id="secondHand">
+            59
         </div>
     </div>
+    <div class="flex fixed top-31 right-0 w-30 h-5 bg-amber-900">
+        <div class = "w-10 bg-black text-center cursor-pointer" id="startBtn">
+            <i class="fa-solid fa-hourglass-start text-white"></i>
+        </div>
+        <div class = "w-10 bg-black text-center cursor-pointer" id="pauseBtn">
+            <i class="fa-solid fa-pause text-white"></i>
+        </div>
+        <div class = "w-10 bg-black text-center cursor-pointer">
+            <i class="fa-solid fa-arrow-rotate-left text-white" id="resetBtn"></i>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
